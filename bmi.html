@@ -1,0 +1,96 @@
+<head>
+    <title>CGPA Calculator</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    </head>
+    
+         <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">CEB CALC</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto me-2 mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    CALCULATORS
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="cgpa.html">CGPA CALCULATOR</a></li>
+                    <li><a class="dropdown-item" href="EB.html">EB CALCULATOR</a></li>
+                    <li><a class="dropdown-item" href="bmi.html">BMI CALCULATOR</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="">HOME</a>
+                </li>
+              
+              </ul>
+              
+            </div>
+          </div>
+        </nav>
+
+<div class ="content" style="background-color: rgb(241, 238, 166);">
+    <form name="techBMI" >
+    <h1>BMI CALCULATOR</h1>
+    <br/>
+    <input type="text" name="weight" placeholder="Enter Weight (kg)" size="20"><br /><br/>
+    <input type="text" name="height" placeholder="Enter Height (cm)" size="20"><br /><br/>
+    <input class="decoration-one px-3 py-2" type="button" value="Calculate BMI" onClick="calculateBmi()"><br /><br/>
+    <input type="text" name="bmi" placeholder="Your BMI Will be here" size="20"><br /><br/>
+    <input type="text" name="meaning" size="35"><br /><br/>
+    <input class="decoration-one px-3 py-2" type="reset" value="Reset" />
+ 
+    <br/>
+    </form>
+    </div>
+    <script src="bmi.js"></script>
+
+    <style>
+        body
+{
+  background-image: url("dee.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+        *   {
+       box-sizing: border-box;
+       
+   }
+   .content {
+position: absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
+border: 5px solid #2e2e29;
+
+padding-left: 90px;
+padding-right: 90px;
+padding-top: 50px;
+padding-bottom: 50px;
+}
+   .decoration-one {
+    background-color:rgb(1, 109, 42);
+       color: white;
+       margin: 0;
+       border:0;
+       border-radius: 6px;
+       width: 130px;
+       padding: 9px;
+      
+       font-weight: bold;
+   }
+   .decoration-one:hover {
+    background-color:rgb(243, 108, 148);
+   
+   }
+   a {
+       text-decoration: none;
+       color:black;
+   }
+   </style>  
+
